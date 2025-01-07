@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+  </head>
+  <body>
+    <div id="auth_container">
+      <div id="signup_cont">
+        <h1 id="signup_heading">Sign Up</h1>
+        <div id="form">
+          <input type="text" placeholder="Full Name" / id="fullName">
+          <input type="email" placeholder="Email" id="signup_email" required />
+          <input
+            type="password"
+            placeholder="Password"
+            id="signup_password"
+            required
+          />
+          <!-- <input type="submit" value="Sign Up" id="signup_btn"> -->
+          <button id="signup_btn">Sign Up</button>
+        </div>
+
+        <div class="toggle">
+          <p>Already have an account? <a href="#">Sign In</a></p>
+        </div>
+      </div>
+
+      <div id="signin_cont">
+        <h1 id="signup_heading">Sign In</h1>
+        <div id="form">
+          <input type="email" placeholder="Email" id="signin_email" required />
+          <input
+            type="password"
+            placeholder="Password"
+            id="signin_password"
+            required
+          />
+          <!-- <input type="submit" value="Sign Up" id="signup_btn"> -->
+
+          <button id="signin_btn">Sign in</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="user_container">
+      <div class="container">
+        <h1>Successfully Signed In</h1>
+        <button id="logout_btn">Logout</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
